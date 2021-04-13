@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "discord.js-collector": "^1.8.9",
+    "discord.js-commando": "^0.12.3",
+    "mongoose": "^5.12.3"
+  }
+}

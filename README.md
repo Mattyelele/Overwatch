@@ -11,7 +11,6 @@
 
 - [About](#about)
 - [Authors](#authors)
-- [Plans](#plans)
 - [Notes](#Notes)
 - [Commands](#Commands)
 - [Copyright and credit](#Copyright)
@@ -20,9 +19,6 @@
 
 Overwatch was created because I wanted to make a bot for a friends server to handle reaction roles and other things. This is my first bot I am releasing, I've tried creating bots before but I've gave up when I started running into problems.
 
-## 🔧 Plans <a name = "plans"></a>
-
-I wanna add a register feature and permissions so only some users can access certain features. I'm also turning it into a chat room so the permissions will allow users to access certain chat rooms
 
 ## Notes <a name = "Notes"></a>
 

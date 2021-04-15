@@ -22,7 +22,7 @@ Overwatch was created because I wanted to make a bot for a friends server to han
 
 ## Notes <a name = "Notes"></a>
 
-Overwatch is a discord bot that is designed to watch over your discord server. This still a work in progress and isn't for multiple discord use on one bot token, I do plan on making a bot that is able to be used in a multiple discord servers and with a web panel. 
+Overwatch is a discord bot that is designed to watch over your discord server. This is still a work in progress and isn't for multiple discord use on one bot token, I do plan on making a bot that is able to be used in a multiple discord servers and with a web panel. 
 
 ## Commands <a name = "Commands"></a>
 

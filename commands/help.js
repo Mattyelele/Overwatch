@@ -10,6 +10,7 @@ module.exports = {
         .setColor(0xff0000)
         .addFields(
             { name: '!questions', value: 'This command gives you a list of any questions you may have we have the anwser to!'},
+            { name: '!socials', value: 'This command lists all my social media!'},
         )
         
         .setFooter()

@@ -24,8 +24,6 @@ client.on('message', message => {
     client.commands.get('help').execute(message, args);
   } else if (command == 'botinfo'){
     client.commands.get('botinfo').execute(message, args);
-  } else if (command == 'trainer'){
-    client.commands.get('trainer').execute(message, args);
   } else if (command == 'socials'){
     client.commands.get('socials').execute(message, args);
   } else if (command == 'reactionroles'){

@@ -10,7 +10,7 @@ module.exports = {
         
         .setTitle('Overwatch')
         .setColor(0x00ffff)
-        .setDescription(`Overwatch was created to help mange TylerMods Shelter \n Do !help to find out what else I can do :D `)
+        .setDescription(`Overwatch is a bot that helps manage servers and has lots of custom commands \n Do !help to find out what else I can do :D `)
         
         
         message.channel.send(embed);

@@ -20,14 +20,15 @@ client.on('message', message => {
   const args = message.content.slice(prefix.length).split(/ +/);
   const command = args.shift().toLowerCase();
 
-  if (command === 'help'){
-    client.commands.get('help').execute(message, args);
-  } else if (command == 'botinfo'){
-    client.commands.get('botinfo').execute(message, args);
-  } else if (command == 'socials'){
-    client.commands.get('socials').execute(message, args);
-  } else if (command == 'reactionroles'){
-    client.commands.get('reactionroles').execute(message, args);
+  switch(command) {
+    case 'help':
+    case 'botinfo':
+    case 'socials':
+    case 'reactionroles':
+      client.commands.get(command).execute(message, args);
+      break;
+    default:
+      break;
   }
 });
 

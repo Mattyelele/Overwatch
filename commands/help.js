@@ -14,7 +14,6 @@ module.exports = {
         )
         
         .setFooter()
-        .setTimestamp()
         
         message.channel.send(embed);
     }

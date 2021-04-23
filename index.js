@@ -4,6 +4,17 @@ const { prefix, token } = require('./config.json')
 const fs = require('fs');
 client.commands = new Discord.Collection();
 
+
+'use strict';
+
+client.on('guildMemberAdd', member => {
+  const channel = member.guild.channels.cache.find(ch => ch.name === 'logs');
+
+  if (!channel) return;
+
+  channel.send(`Welcome, ${member}`);
+});
+
 /* Command Handler */
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 for(const file of commandFiles){
@@ -39,5 +50,5 @@ client.on('ready', () => {
 });
 
 
-/* Token is store in config.js*/
+/* Token is stored in config.js*/
 client.login(token);

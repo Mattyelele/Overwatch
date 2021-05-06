@@ -1,19 +1,17 @@
 const Discord = require('discord.js');
-const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"]});
+const client = new Discord.Client();
 const { prefix, token } = require('./config.json')
 const fs = require('fs');
+const { exception } = require('console');
 client.commands = new Discord.Collection();
 
-
-'use strict';
-
 client.on('guildMemberAdd', member => {
+
   const channel = member.guild.channels.cache.find(ch => ch.name === 'logs');
 
   if (!channel) return;
 
-  channel.send(`Welcome, ${member}`);
-});
+  channel.send(`Welcome to the server, ${member}`);
 
 /* Command Handler */
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
@@ -22,7 +20,6 @@ for(const file of commandFiles){
   console.log(`${file} has loaded!`)
   client.commands.set(command.name, command);
 }
-
 
 client.on('message', message => {
   if(!message.content.startsWith(prefix) || message.author.bot) return;
@@ -43,7 +40,6 @@ client.on('message', message => {
   }
 });
 
-
 client.on('ready', () => {
   console.log(`${client.user.username} is now online!`);
   client.user.setActivity(`Matty break me`, {type: "WATCHING"});
@@ -51,4 +47,4 @@ client.on('ready', () => {
 
 
 /* Token is stored in config.js*/
-client.login(token);
+client.login(token)

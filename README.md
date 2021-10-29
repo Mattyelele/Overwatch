@@ -30,6 +30,7 @@ Overwatch is a discord bot that is designed to watch over your discord server. T
 ## ✍️ Authors <a name = "authors"></a>
 
 - [@Mattyelele](https://github.com/Mattyelele) - Creator
+- [@ABaddlesmere](https://github.com/ABaddlesmere) - helper
 - [@Jackelele](https://github.com/Jackelele) - README.md layout
 
 ## Copyright and credit <a name = "Copyright"></a>
